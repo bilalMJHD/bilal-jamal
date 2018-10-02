@@ -14,16 +14,21 @@
 <button class="dynamic-shadow btn" onclick="swap('jamal','bilal')">
   Swap the Text
 </button>
-
-<script>
-function swap(id1, id2) {
-  var a=document.getElementById(id1).textContent;
-  var b=document.getElementById(id2).textContent;
-  document.getElementById(id2).textContent = a;
-  document.getElementById(id1).textContent = b;
-  
-}
-
-</script>
+<hr>
+<div class="container">
+    <button class="accordion dynamic-shadow">Section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <button class="accordion dynamic-shadow">Section 2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <button class="accordion dynamic-shadow">Section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

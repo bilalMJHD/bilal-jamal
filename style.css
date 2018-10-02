@@ -1,3 +1,4 @@
+
 /* Custom CSS */
 body{
   background-image: url(bg.jpg);
@@ -62,4 +63,25 @@ body{
   opacity:0.7;
   border-radius:inherit;
   z-index:-1;
+}
+/* Accordion */
+.accordion{
+    /*background-color: #eee;*/
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
