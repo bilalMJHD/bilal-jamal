@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="jamal" class="dynamic-shadow format">
+  Jamal Rasool
+</div>
+<div id="bilal" class="dynamic-shadow format">
+  Bilal Rasool
+</div><div class="wrapper"></div>
+<button class="dynamic-shadow btn" onclick="swap('jamal','bilal')">
+  Swap the Text
+</button>
+
+<script>
+function swap(id1, id2) {
+  var a=document.getElementById(id1).textContent;
+  var b=document.getElementById(id2).textContent;
+  document.getElementById(id2).textContent = a;
+  document.getElementById(id1).textContent = b;
+  
+}
+
+</script>
+</body>
+</html>
